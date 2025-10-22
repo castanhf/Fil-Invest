@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fil-Invest Exit Strategy Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Fil-Invest Exit Strategy Planner</h1>
+    <p class="tagline">Craft a disciplined exit plan for your crypto and stock investments.</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Investment Inputs</h2>
+      <form id="strategy-form">
+        <div class="field-group">
+          <label for="asset-search">Cryptocurrency or S&amp;P 500 company</label>
+          <input
+            id="asset-search"
+            name="asset"
+            type="text"
+            list="asset-options"
+            placeholder="Search by name or symbol (e.g., Bitcoin or AAPL)"
+            required
+            autocomplete="off"
+          />
+          <datalist id="asset-options"></datalist>
+          <p class="help-text">Start typing to search our curated list of cryptocurrencies and S&amp;P 500 constituents.</p>
+        </div>
+
+        <div class="field-grid">
+          <div class="field-group">
+            <label for="investment-amount">Investment amount (USD)</label>
+            <input
+              id="investment-amount"
+              name="investment"
+              type="number"
+              min="0"
+              step="0.01"
+              placeholder="5000"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="average-price">Average buy price (USD)</label>
+            <input
+              id="average-price"
+              name="averagePrice"
+              type="number"
+              min="0"
+              step="0.01"
+              placeholder="250"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="primary-btn">Generate Exit Strategy</button>
+        <p id="form-error" role="alert" class="error-message" hidden></p>
+      </form>
+    </section>
+
+    <section id="results" class="results-section" hidden>
+      <h2>Exit Strategy Overview</h2>
+      <div class="summary" id="input-summary"></div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Iteration</th>
+              <th>Crypto price (USD)</th>
+              <th>Holdings before sale</th>
+              <th>Crypto sold (10%)</th>
+              <th>Profit taken (USD)</th>
+              <th>Holdings after sale</th>
+            </tr>
+          </thead>
+          <tbody id="strategy-table"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="disclaimer">This tool is for educational purposes only and does not constitute financial advice.</p>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
