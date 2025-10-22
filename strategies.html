@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fil-Invest | Sell Strategies Playbook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-light page-strategies">
+    <header class="top-bar">
+      <a class="brand" href="index.html">Fil-Invest</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="strategies.html" aria-current="page">Strategies</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#insights">Insights</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button
+          class="settings-button"
+          id="settingsButton"
+          type="button"
+          aria-haspopup="true"
+          aria-controls="settingsMenu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open settings</span>
+          &#9881;
+        </button>
+        <div class="settings-menu" id="settingsMenu" role="menu" aria-hidden="true">
+          <button class="menu-item" id="themeToggle" role="menuitemcheckbox" aria-checked="false">
+            <span class="option-text">
+              <span class="option-title">Night mode</span>
+              <span class="option-state" id="themeState">Off</span>
+            </span>
+            <span class="toggle-switch" aria-hidden="true">
+              <span class="toggle-thumb"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="strategies-main">
+      <section class="page-hero">
+        <div class="page-hero__content">
+          <p class="eyebrow">Sell-side strategy hub</p>
+          <h1>Protect gains and exit positions with confidence</h1>
+          <p>
+            Calibrate trailing stops, profit targets, and staged exits in a single
+            workspace. Every scenario is backed by historical stress tests so you
+            can react decisively when the market moves fast.
+          </p>
+          <div class="hero-actions">
+            <a class="cta primary" href="#playbook">View playbook</a>
+            <a class="cta secondary" href="index.html#contact">Talk to an advisor</a>
+          </div>
+        </div>
+        <div class="page-hero__insight" aria-hidden="true">
+          <div class="insight-card">
+            <h2>Last 30 day exits</h2>
+            <dl>
+              <div>
+                <dt>Average realized return</dt>
+                <dd>+12.4%</dd>
+              </div>
+              <div>
+                <dt>Trailing stop capture</dt>
+                <dd>87%</dd>
+              </div>
+              <div>
+                <dt>Time-to-exit</dt>
+                <dd>3.6 days</dd>
+              </div>
+            </dl>
+            <p class="insight-hint">Updated 4 minutes ago</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="strategy-overview" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <h2 id="overview-title">Sell strategy frameworks</h2>
+          <p>
+            Mix and match guardrails for growth, swing, or income portfolios. Each
+            module stacks with automated alerts, messaging, and compliance notes for
+            your team.
+          </p>
+        </div>
+        <div class="overview-grid">
+          <article class="overview-card">
+            <h3>Staggered Profit Targets</h3>
+            <p>
+              Scale out of winning positions at 25%, 50%, and 75% profit captures to
+              smooth out performance volatility.
+            </p>
+            <ul>
+              <li>Smart notifications when ladder checkpoints trigger</li>
+              <li>Dynamic sizing tied to portfolio risk budget</li>
+            </ul>
+          </article>
+          <article class="overview-card">
+            <h3>Trailing Stop Automation</h3>
+            <p>
+              Protect open gains with ATR-based trailing stops that self-adjust to
+              volatility regimes.
+            </p>
+            <ul>
+              <li>Adaptive buffers for high-beta assets</li>
+              <li>Backtesting overlays for intraday and swing timelines</li>
+            </ul>
+          </article>
+          <article class="overview-card">
+            <h3>Event-driven Exits</h3>
+            <p>
+              Trigger exit flows on earnings, macro events, or governance changes
+              with pre-approved playbooks.
+            </p>
+            <ul>
+              <li>Calendar sync with economic releases</li>
+              <li>Audit-ready logs for compliance reviews</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="sell-playbook" id="playbook" aria-labelledby="playbook-title">
+        <div class="section-heading">
+          <h2 id="playbook-title">Sell strategies playbook</h2>
+          <p>
+            Drag and drop components to build the perfect exit plan. Every block is
+            annotated with guidance, historical win rates, and live probability
+            bands so you know the quality of each signal.
+          </p>
+        </div>
+        <div class="playbook-grid">
+          <article class="playbook-card">
+            <header>
+              <span class="badge">Momentum</span>
+              <h3>Rapid swing exit</h3>
+              <p>Designed for 2&ndash;5 day holding periods with elevated beta.</p>
+            </header>
+            <ul>
+              <li><strong>Trigger:</strong> Price closes 1.5 ATR below 9 EMA</li>
+              <li><strong>Profit:</strong> Scale 40/40/20 at +6%, +12%, +18%</li>
+              <li><strong>Stop:</strong> Ratchet every +3% move with 0.8 ATR buffer</li>
+            </ul>
+            <p class="success-rate">Historical win rate: 64%</p>
+          </article>
+          <article class="playbook-card">
+            <header>
+              <span class="badge badge--defensive">Defensive</span>
+              <h3>Capital preservation</h3>
+              <p>Ideal for pension and income mandates prioritizing downside risk.</p>
+            </header>
+            <ul>
+              <li><strong>Trigger:</strong> Macro score falls below 38/100</li>
+              <li><strong>Profit:</strong> Capture 50% at +8%, remainder via trailing stop</li>
+              <li><strong>Stop:</strong> Hard floor at -4% from entry</li>
+            </ul>
+            <p class="success-rate">Historical win rate: 72%</p>
+          </article>
+          <article class="playbook-card">
+            <header>
+              <span class="badge badge--quant">Quant</span>
+              <h3>Signal mesh exit</h3>
+              <p>Blends on-chain flows with equity sentiment for hybrid portfolios.</p>
+            </header>
+            <ul>
+              <li><strong>Trigger:</strong> Whale flow deciles &ge; 7 paired with RSI &lt; 45</li>
+              <li><strong>Profit:</strong> Auto ladder by risk contribution</li>
+              <li><strong>Stop:</strong> 2.2 ATR trailing with circuit breaker pause</li>
+            </ul>
+            <p class="success-rate">Historical win rate: 69%</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="signal-matrix" aria-labelledby="matrix-title">
+        <div class="section-heading">
+          <h2 id="matrix-title">Exit signal matrix</h2>
+          <p>
+            Monitor the health of each portfolio sleeve at a glance. Signals update
+            every fifteen minutes and alert your desk when intervention is needed.
+          </p>
+        </div>
+        <div class="matrix-grid" role="table" aria-label="Exit signal dashboard">
+          <div class="matrix-row matrix-header" role="row">
+            <div role="columnheader">Strategy</div>
+            <div role="columnheader">Signal</div>
+            <div role="columnheader">Action</div>
+            <div role="columnheader">Confidence</div>
+          </div>
+          <div class="matrix-row" role="row">
+            <div role="cell">Growth equity momentum</div>
+            <div role="cell"><span class="status status--alert">Exit now</span></div>
+            <div role="cell">Scale out 50% and tighten trailing stop</div>
+            <div role="cell">82%</div>
+          </div>
+          <div class="matrix-row" role="row">
+            <div role="cell">Balanced crypto basket</div>
+            <div role="cell"><span class="status status--warning">Watchlist</span></div>
+            <div role="cell">Initiate risk review if BTC &lt; $58K</div>
+            <div role="cell">68%</div>
+          </div>
+          <div class="matrix-row" role="row">
+            <div role="cell">Dividend rotation</div>
+            <div role="cell"><span class="status status--ok">On track</span></div>
+            <div role="cell">Maintain trailing stop at -3%</div>
+            <div role="cell">91%</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guidance" aria-labelledby="guidance-title">
+        <div class="section-heading">
+          <h2 id="guidance-title">Execution support</h2>
+          <p>
+            Distribute instructions to traders, clients, or partners instantly. Every
+            workflow can be cloned and versioned with proper permissions.
+          </p>
+        </div>
+        <div class="guidance-grid">
+          <article class="guidance-card">
+            <h3>Multi-channel alerts</h3>
+            <p>
+              Push real-time notifications to Slack, email, and SMS with templated
+              action steps and approval routing.
+            </p>
+          </article>
+          <article class="guidance-card">
+            <h3>Scenario testing</h3>
+            <p>
+              Run shock tests across rates, FX, and volatility spikes to confirm your
+              exit path stays resilient.
+            </p>
+          </article>
+          <article class="guidance-card">
+            <h3>Post-trade analytics</h3>
+            <p>
+              Capture benchmark comparisons, slippage, and attribution so teams can
+              iterate on what works.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h2>Ready to optimize your exit strategies?</h2>
+        <p>Email us at <a href="mailto:hello@filinvest.com">hello@filinvest.com</a></p>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Fil-Invest. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

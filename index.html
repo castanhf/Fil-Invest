@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fil-Invest | Investment Strategies</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-light">
+    <header class="top-bar">
+      <a class="brand" href="index.html">Fil-Invest</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="strategies.html">Strategies</a>
+        <a href="#research">Research</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button
+          class="settings-button"
+          id="settingsButton"
+          type="button"
+          aria-haspopup="true"
+          aria-controls="settingsMenu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open settings</span>
+          &#9881;
+        </button>
+        <div class="settings-menu" id="settingsMenu" role="menu" aria-hidden="true">
+          <button class="menu-item" id="themeToggle" role="menuitemcheckbox" aria-checked="false">
+            <span class="option-text">
+              <span class="option-title">Night mode</span>
+              <span class="option-state" id="themeState">Off</span>
+            </span>
+            <span class="toggle-switch" aria-hidden="true">
+              <span class="toggle-thumb"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Define Smarter Investment Strategies</h1>
+          <p>
+            Build and evaluate diversified portfolios across stocks and crypto with
+            Fil-Invest’s intuitive strategy designer and real-time analytics.
+          </p>
+          <div class="cta-group">
+            <a class="cta primary" href="#strategies">Start Building</a>
+            <a class="cta secondary" href="#research">Explore Research</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <h2>Projected ROI</h2>
+            <p class="roi">+18.4%</p>
+            <p class="caption">Balanced Tech &amp; DeFi Strategy</p>
+          </div>
+          <div class="visual-card">
+            <h2>Risk Score</h2>
+            <p class="risk-score">Moderate</p>
+            <p class="caption">Volatility-adjusted exposure</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="strategies" class="section">
+        <h2>Strategy Builder</h2>
+        <p>
+          Combine equities, ETFs, and digital assets using configurable weightings,
+          automated rebalancing, and scenario testing to simulate market cycles.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Model Portfolios</h3>
+            <p>Create templates tailored to growth, income, or balanced goals.</p>
+          </article>
+          <article class="card">
+            <h3>Backtesting Engine</h3>
+            <p>Replay historical market data to validate assumptions.</p>
+          </article>
+          <article class="card">
+            <h3>Risk Controls</h3>
+            <p>Set guardrails with stop-loss triggers and asset caps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <h2>Research &amp; Analytics</h2>
+        <p>
+          Access curated market commentary, macroeconomic indicators, and social
+          sentiment dashboards to act on opportunities quickly.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Market Snapshots</h3>
+            <p>Monitor real-time performance with customizable watchlists.</p>
+          </article>
+          <article class="card">
+            <h3>On-chain Signals</h3>
+            <p>Track token flows, staking activity, and whale movements.</p>
+          </article>
+          <article class="card">
+            <h3>Economic Calendar</h3>
+            <p>Stay ahead with key global announcements and forecasts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="insights" class="section insights">
+        <h2>Latest Insights</h2>
+        <div class="insight-list">
+          <article>
+            <h3>Cross-market correlations remain elevated</h3>
+            <p>
+              Identify diversification gaps as equities and crypto react to
+              liquidity shifts from central banks.
+            </p>
+          </article>
+          <article>
+            <h3>Yield opportunities in staking 2.0</h3>
+            <p>
+              Explore structured products that blend fixed income stability with
+              on-chain yield strategies.
+            </p>
+          </article>
+          <article>
+            <h3>Institutional adoption ramps up</h3>
+            <p>
+              Discover how asset managers are using tokenized funds to accelerate
+              settlement and reduce counterparty risk.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div>
+        <h2>Ready to build your next strategy?</h2>
+        <p>Email us at <a href="mailto:hello@filinvest.com">hello@filinvest.com</a></p>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Fil-Invest. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
