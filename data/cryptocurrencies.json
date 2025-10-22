@@ -1,0 +1,22 @@
+[
+  { "symbol": "btc", "name": "Bitcoin" },
+  { "symbol": "eth", "name": "Ethereum" },
+  { "symbol": "usdt", "name": "Tether" },
+  { "symbol": "bnb", "name": "BNB" },
+  { "symbol": "sol", "name": "Solana" },
+  { "symbol": "xrp", "name": "XRP" },
+  { "symbol": "ada", "name": "Cardano" },
+  { "symbol": "doge", "name": "Dogecoin" },
+  { "symbol": "matic", "name": "Polygon" },
+  { "symbol": "dot", "name": "Polkadot" },
+  { "symbol": "link", "name": "Chainlink" },
+  { "symbol": "ltc", "name": "Litecoin" },
+  { "symbol": "avax", "name": "Avalanche" },
+  { "symbol": "atom", "name": "Cosmos" },
+  { "symbol": "etc", "name": "Ethereum Classic" },
+  { "symbol": "xlm", "name": "Stellar" },
+  { "symbol": "fil", "name": "Filecoin" },
+  { "symbol": "uni", "name": "Uniswap" },
+  { "symbol": "trx", "name": "TRON" },
+  { "symbol": "shib", "name": "Shiba Inu" }
+]
