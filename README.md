@@ -91,7 +91,7 @@ The repository currently ships as documentation only, so standing up the project
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-org>/Fil-Invest.git
+   git clone https://github.com/castanhf/Fil-Invest.git
    cd Fil-Invest
    ```
 2. **Create an isolated workspace (optional but recommended)** – If you plan to prototype analytics notebooks or automation scripts alongside the framework, create and activate a virtual environment using your preferred tool (e.g., `python -m venv .venv && source .venv/bin/activate`).
