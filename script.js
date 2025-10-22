@@ -108,7 +108,7 @@ function generateStrategy({ averagePrice, initialHoldings }) {
     const price = iteration === 0 ? averagePrice : previousPrice * 1.5;
     const holdingsBeforeSale = remainingHoldings;
     const soldQuantity = iteration === 0 ? 0 : holdingsBeforeSale * 0.1;
-    const profitTaken = soldQuantity * price;
+    const profitTaken = soldQuantity * (price - averagePrice);
     remainingHoldings = holdingsBeforeSale - soldQuantity;
     previousPrice = price;
 
