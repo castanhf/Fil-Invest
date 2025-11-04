@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fil-Invest | Staking Rewards Planner</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-light page-staking" data-page="staking">
+    <header class="top-bar">
+      <a class="brand" href="index.html">Fil-Invest</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="strategies.html" data-page-target="strategies">Strategies</a>
+        <a href="staking.html" data-page-target="staking">Staking</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#insights">Insights</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button
+          class="settings-button"
+          id="settingsButton"
+          type="button"
+          aria-haspopup="true"
+          aria-controls="settingsMenu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open settings</span>
+          &#9881;
+        </button>
+        <div class="settings-menu" id="settingsMenu" role="menu" aria-hidden="true">
+          <button class="menu-item" id="themeToggle" role="menuitemcheckbox" aria-checked="false">
+            <span class="option-text">
+              <span class="option-title">Night mode</span>
+              <span class="option-state" id="themeState">Off</span>
+            </span>
+            <span class="toggle-switch" aria-hidden="true">
+              <span class="toggle-thumb"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="staking-main">
+      <section class="page-hero">
+        <div class="page-hero__content">
+          <p class="eyebrow">Staking rewards lab</p>
+          <h1>Project long-term staking growth</h1>
+          <p>
+            Calibrate compounding rewards scenarios for proof-of-stake assets and
+            stay ahead of treasury needs.
+          </p>
+          <!-- TODO: Replace placeholder messaging with staking-specific positioning once content is ready. -->
+        </div>
+      </section>
+
+      <section class="staking-config" aria-labelledby="staking-config-title">
+        <div class="section-heading">
+          <h2 id="staking-config-title">Configure staking scenario</h2>
+          <p>
+            Define the asset, initial position size, and let the calculator outline
+            potential staking growth milestones.
+          </p>
+          <!-- TODO: Introduce brief guidance for choosing staking-enabled assets and setting realistic APY assumptions. -->
+        </div>
+        <div class="config-grid">
+          <article class="config-card">
+            <h3>Asset selection</h3>
+            <!-- TODO: Add dropdown or searchable list limited to cryptocurrencies with staking enabled. -->
+            <!-- TODO: Display helper text clarifying eligibility criteria for appearing in the staking list. -->
+          </article>
+          <article class="config-card">
+            <h3>Initial investment</h3>
+            <!-- TODO: Provide input for USD investment amount and optional APY override. -->
+            <!-- TODO: Allow users to adjust compounding frequency or reward distribution cadence if needed. -->
+          </article>
+          <article class="config-card">
+            <h3>Projection controls</h3>
+            <!-- TODO: Include calculate button that triggers staking projection generation. -->
+            <!-- TODO: Capture staking reward assumptions such as validator commission, lockup periods, and reward restaking behavior. -->
+          </article>
+        </div>
+      </section>
+
+      <section class="staking-results" aria-labelledby="staking-results-title">
+        <div class="section-heading">
+          <h2 id="staking-results-title">Projected rewards timeline</h2>
+          <p>
+            Visualize hypothetical staking accumulation across multiple horizons to
+            align with treasury or reinvestment strategies.
+          </p>
+          <!-- TODO: Summarize selected asset, investment amount, and assumed APY for quick reference. -->
+        </div>
+        <div class="results-grid">
+          <!-- TODO: Present staking projections for 6 months, 1 year, 2 years, and 5 years showing crypto accumulated and equivalent USD value. -->
+          <!-- TODO: Reserve space for charts or tables to compare cumulative rewards under different compounding settings. -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="disclaimer">This tool is for educational purposes only and does not constitute financial advice.</p>
+    </footer>
+  </body>
+</html>
